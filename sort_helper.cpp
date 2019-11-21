@@ -1,3 +1,5 @@
+#include <iostream>
+
 // Absolute value function
 double abs(double val)
 {
@@ -56,4 +58,28 @@ double Power(double b, int e)
 
     return final; 
 
+}
+
+// Get Data Function
+int GetData(double list[])
+{
+    int size, input;
+
+    std::cout << "How many values would you like to process?";
+    std::cin >> size;
+
+    for(int i = 0; i < size; i++)
+    {
+        std::cin >> input;
+        list[i] = input;
+    }
+
+    return size;
+
+}
+
+// Sort Function
+void Sort(double list[], int count, char order)
+{
+    
 }
