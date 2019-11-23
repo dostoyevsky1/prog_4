@@ -81,5 +81,29 @@ int GetData(double list[])
 // Sort Function
 void Sort(double list[], int count, char order)
 {
-    
+    if(order == 'D' || order == 'd')
+    {
+        for(int i = count; i > 0; i--)
+        {
+            for(int j = 0; j < i - 1; j++)
+            {
+                if(list[j] < list[j+1])
+                {
+                    std::swap(list[j],list[j+1]);
+                }
+            }
+        }
+    } else
+    {
+        for(int i = count; i > 0; i--)
+        {
+            for(int j = 0; j < i - 1; j++)
+            {
+                if(list[j] > list[j+1])
+                {
+                    std::swap(list[j],list[j+1]);
+                }
+            }
+        }
+    }
 }
