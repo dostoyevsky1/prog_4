@@ -63,8 +63,9 @@ double Power(double b, int e)
 // Get Data Function
 int GetData(double list[])
 {
-    int size, input;
-
+    int size;
+    double input;
+    
     std::cout << "How many values would you like to process?";
     std::cin >> size;
 
